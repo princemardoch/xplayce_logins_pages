@@ -3,21 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign Up - Xplayce</title>
+    <title>Login - Xplayce</title>
 
     <meta name="description" content="La porte vers un nouveau monde 🌍">
     <meta name="keywords" content="Crypto, blockchain, game, trading">
 
-    <link rel="icon" href="favicon_xplayce1.png" type="image/x-icon">
+    <link rel="icon" href="imgs/logos/favicon_xplayce1.png" type="image/x-icon">
 
-    <meta property="og:title" content="Sign Up - Xplace">
+    <meta property="og:title" content="Log In - Xplace">
     <meta property="og:description" content="la porte vers un nouveau monde 🌍 - Crypto, blockchain, game, trading">
-    <meta property="og:image" content="logo_SN.png">
+    <meta property="og:image" content="imgs/logos/logo_SN.png">
 
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Sign Up - Xplayce">
+    <meta name="twitter:title" content="Login - Xplayce">
     <meta name="twitter:description" content="la porte vers un nouveau monde 🌍 - Crypto, blockchain, game, trading">
-    <meta name="twitter:image" content="logo_SN.png">
+    <meta name="twitter:image" content="imgs/logos/logo_SN.png">
 
     <style>
 
@@ -73,7 +73,7 @@
                 margin: 8px;
                 padding: 15px 15px;
 
-                width: 400px;
+                width: 100%;
                 height: 60px;
 
                 background-color: #2B2B2B;
@@ -83,15 +83,26 @@
 
                 border: none;
                 border-radius: 10px;
-
             }
             input:focus{
                 outline: 4px solid #b096ff6f;
                 outline-offset: 3px;
             }
-
             input::placeholder{
                 font-weight: 500;
+            }
+
+            .forgot_passw{
+                opacity: 0.5;
+
+                font-weight: 300;
+                text-align: right;
+                
+                width: 100%;
+
+                margin-top: 15px;
+                
+                cursor: pointer;
             }
 
             /* buttons */
@@ -99,7 +110,7 @@
                 margin: 30px 5px;
                 padding: 15px 15px;
 
-                width: 400px;
+                width: 100%;
                 height: 60px;
 
                 background-color: #ffffff;
@@ -113,7 +124,7 @@
 
                 cursor: pointer;
 
-                transition: 0.3s;
+                transition: 0.5s;
             }
             button:focus{
                 outline: 4px solid #b096ff6f;
@@ -122,11 +133,15 @@
             button:hover{
                 background-color: #e1e1e1;
             }
-            
+            .btn_gf:hover{
+                background-color: #303030;
+                border-color: rgb(255, 255, 255);
+            }
 
-        /*** GOOGLE FACEBOOK Sign Up BUTTON ***/
+
+        /*** GOOGLE FACEBOOK LOGIN BUTTON ***/
     
-            /* Other Sign Up method button */
+            /* Other login method button */
             .alternative_text{
                 color: #5F5F5F;
                 display: flex;
@@ -135,11 +150,11 @@
                 justify-content: space-between;
                 width: 100%;
             }
-            .other_signup_method{
+            .other_login_method{
                 margin: 20px 0px;
             }
             .line{
-                width: 100px;
+                width: 25%;
                 height: 1px;
                 background-color: rgb(107, 107, 107);
             }
@@ -149,7 +164,7 @@
                 margin: 10px;
                 padding: 15px 15px;
 
-                width: 400px;
+                width: 100%;
                 height: 60px;
 
                 background-color: #222222;
@@ -171,60 +186,46 @@
 
                 transition: ease 0.5s;
             }
-            btn_gf:focus{
-                outline: 4px solid #b096ff6f;
-                outline-offset: 3px;
-            }
-            .btn_gf:hover{
-                background-color: #303030;
-                border-color: rgb(255, 255, 255);
-            }
-
             /* Icon google and facebook */
             .btn_gf img{
                 margin-right: 10px;
                 width: 25px;
             }
 
-            /*  LOGIN text */
+            /*  SIGNUP text */
 
-            .login_text{
+            .signup_text{
                 font-weight: 300;
                 color: #969696;
 
                 padding: 30px;
             }
-            .login_url a{
+            .singup_url a{
                 text-decoration: none;
                 color: white;
             }
 
-            /* Bottom Terms */
 
-            .terms_text{
-                color: #969696;
-                text-align: center;
-                margin-top: -20px;
-                margin-bottom: 30px;
+        /* RESPONSIVE */
+        @media screen and (max-width: 430px) {
+            .main_section{
+                width: 90%;
             }
-            .terms_text a{
-                color: #5F5F5F;
-            }
-
+        }
 
     </style>
 </head>
 <body>
     <section class="main_section">
-        <img class="logo" src="xplayce_logo.png" alt="">
-        <h1> Welcome 🎉 </h1>
+        <img class="logo" src="imgs/logos/xplayce_logo.png" alt="">
+        <h1> What's Up 👋🏼 </h1>
 
 
         <form action="" class="card form_div">
-            <input type="text" placeholder="Full name" class="email_input">
-            <input type="email" placeholder="Email" class="email_input">
+            <input type="text" placeholder="Email" class="email_input">
             <input type="password" placeholder="Password" class="password_input">
-            <button type="submit" class="signup_btn"> Sign Up </button>
+            <p class="forgot_passw"> Forgot your password </p>
+            <button type="submit" class="login_btn"> Log In </button>
         </form>
 
         <div class="alternative_text">
@@ -233,22 +234,15 @@
             <div class="line"></div>
         </div>
 
-        <div class="card other_signup_method">
-            <a href="" class="btn_gf"> <img src="google_icon.svg" alt=""> Sign Up </a>
-            <a href="" class="btn_gf"> <img src="facebook_icon.svg" alt=""> Sign Up </a>
-        </div>  
-
-        <p class="terms_text">
-            By signing up, you agree to our 
-            <a href=""> Terms </a>, 
-            <a href=""> Data Policy </a> and 
-            <a href=""> Cookies Policy</a>.
-        </p>
+        <div class="card other_login_method">
+            <a href="" class="btn_gf"> <img src="imgs/icons/google_icon.svg" alt=""> Sign Up </a>
+            <a href="" class="btn_gf"> <img src="imgs/icons/facebook_icon.svg" alt=""> Sign Up </a>
+        </div>
         
 
-        <p class="login_text"> 
+        <p class="signup_text"> 
             Don't have an account?
-            <span class="login_url"> <strong> <a href="/app/auth/admin_templates/login.html"> Login </a> </strong> </span>
+            <span class="singup_url"> <strong> <a href="signup.html">Sign up </a> </strong> </span>
         </p>
     </section>
 </body>
