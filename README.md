@@ -17,5 +17,5 @@ Plateforme immersive de crypto, blockchain, jeux et trading.
 ## Installation
 
 ```bash
-git clone https://exemple.com/xplayce.git
+git clone https://github.com/princemardoch/xplayce_logins_pages.git
 cd xplayce
