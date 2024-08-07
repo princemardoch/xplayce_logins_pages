@@ -3,7 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sign Up - Xplayce</title>
+
+    <meta name="description" content="La porte vers un nouveau monde 🌍">
+    <meta name="keywords" content="Crypto, blockchain, game, trading">
+
+    <link rel="icon" href="favicon_xplayce1.png" type="image/x-icon">
+
+    <meta property="og:title" content="Sign Up - Xplace">
+    <meta property="og:description" content="la porte vers un nouveau monde 🌍 - Crypto, blockchain, game, trading">
+    <meta property="og:image" content="logo_SN.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Sign Up - Xplayce">
+    <meta name="twitter:description" content="la porte vers un nouveau monde 🌍 - Crypto, blockchain, game, trading">
+    <meta name="twitter:image" content="logo_SN.png">
 
     <style>
 
@@ -33,9 +47,11 @@
         .main_section{
             width: 400px;
             height: 90%;
+
             flex-direction: column;
-            color: white;
             justify-content:start;
+            
+            color: white;
         }
 
         .logo{
@@ -67,22 +83,15 @@
 
                 border: none;
                 border-radius: 10px;
+
             }
+            input:focus{
+                outline: 4px solid #b096ff6f;
+                outline-offset: 3px;
+            }
+
             input::placeholder{
                 font-weight: 500;
-            }
-
-            .forgot_passw{
-                opacity: 0.5;
-
-                font-weight: 300;
-                text-align: right;
-                
-                width: 100%;
-
-                margin-top: 15px;
-                
-                cursor: pointer;
             }
 
             /* buttons */
@@ -103,11 +112,21 @@
                 border-radius: 10px;
 
                 cursor: pointer;
-            }
 
-        /*** GOOGLE FACEBOOK LOGIN BUTTON ***/
+                transition: 0.3s;
+            }
+            button:focus{
+                outline: 4px solid #b096ff6f;
+                outline-offset: 3px;
+            }
+            button:hover{
+                background-color: #e1e1e1;
+            }
+            
+
+        /*** GOOGLE FACEBOOK Sign Up BUTTON ***/
     
-            /* Other login method button */
+            /* Other Sign Up method button */
             .alternative_text{
                 color: #5F5F5F;
                 display: flex;
@@ -116,7 +135,7 @@
                 justify-content: space-between;
                 width: 100%;
             }
-            .other_login_method{
+            .other_signup_method{
                 margin: 20px 0px;
             }
             .line{
@@ -138,6 +157,7 @@
 
                 font-size: 1em;
                 font-weight: 600;
+                text-decoration: none;
 
                 border: #343434 1px solid;
                 border-radius: 10px;
@@ -145,43 +165,66 @@
                 cursor: pointer;
 
                 display: flex;
-                    align-items: center;
-                    align-content: center;
-                    justify-content: center;
+                align-items: center;
+                align-content: center;
+                justify-content: center;
+
+                transition: ease 0.5s;
             }
+            btn_gf:focus{
+                outline: 4px solid #b096ff6f;
+                outline-offset: 3px;
+            }
+            .btn_gf:hover{
+                background-color: #303030;
+                border-color: rgb(255, 255, 255);
+            }
+
             /* Icon google and facebook */
             .btn_gf img{
                 margin-right: 10px;
                 width: 25px;
             }
 
-            /*  SIGNUP text */
+            /*  LOGIN text */
 
-            .signup_bottom{
+            .login_text{
                 font-weight: 300;
                 color: #969696;
+
+                padding: 30px;
             }
-            .singup_url{
-                color: white;
-            }
-            .singup_url a{
+            .login_url a{
                 text-decoration: none;
                 color: white;
             }
+
+            /* Bottom Terms */
+
+            .terms_text{
+                color: #969696;
+                text-align: center;
+                margin-top: -20px;
+                margin-bottom: 30px;
+            }
+            .terms_text a{
+                color: #5F5F5F;
+            }
+
 
     </style>
 </head>
 <body>
     <section class="main_section">
         <img class="logo" src="xplayce_logo.png" alt="">
-        <h1> What's Up 👋🏼 </h1>
+        <h1> Welcome 🎉 </h1>
 
 
         <form action="" class="card form_div">
-            <input type="text" placeholder="Email" class="email_input">
+            <input type="text" placeholder="Full name" class="email_input">
+            <input type="email" placeholder="Email" class="email_input">
             <input type="password" placeholder="Password" class="password_input">
-            <p class="forgot_passw"> Forgot your password </p>
-            <button type="submit" class="login_btn"> Log In </button>
+            <button type="submit" class="signup_btn"> Sign Up </button>
         </form>
 
         <div class="alternative_text">
@@ -190,15 +233,22 @@
             <div class="line"></div>
         </div>
 
-        <div class="card other_login_method">
-            <div class="btn_gf"> <img src="google_icon.svg" alt=""> Log In </div>
-            <div class="btn_gf"> <img src="facebook_icon.svg" alt=""> Login </div>
-        </div>
+        <div class="card other_signup_method">
+            <a href="" class="btn_gf"> <img src="google_icon.svg" alt=""> Sign Up </a>
+            <a href="" class="btn_gf"> <img src="facebook_icon.svg" alt=""> Sign Up </a>
+        </div>  
+
+        <p class="terms_text">
+            By signing up, you agree to our 
+            <a href=""> Terms </a>, 
+            <a href=""> Data Policy </a> and 
+            <a href=""> Cookies Policy</a>.
+        </p>
         
 
-        <p class="signup_bottom"> 
+        <p class="login_text"> 
             Don't have an account?
-            <span class="singup_url"> <strong> <a href="">Sign up </a> </strong> </span>
+            <span class="login_url"> <strong> <a href="/app/auth/admin_templates/login.html"> Login </a> </strong> </span>
         </p>
     </section>
 </body>
