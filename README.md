@@ -12,7 +12,7 @@ Plateforme immersive de crypto, blockchain, jeux et trading.
 - `imgs/` - Dossier pour les images utilisées dans les interfaces.
 - `icons/` - Icônes pour les options de connexion Google et Facebook.
 
-![Logo Xplayce](https://ibb.co/F3xHLwC "Responsive Screens")
+![Responsive Screens](https://i.ibb.co/02DsRMv/Capture-d-e-cran-2024-08-07-a-14-40-07.png "Responsive Screens")
 
 ## Installation
 
